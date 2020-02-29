@@ -4,4 +4,7 @@
 * lesson-03 Tensor操作
 * lesson-04 计算图与动态图机制 
 * lesson-05 autograd与逻辑回归
-* lesson-06 
+* lesson-06 DataLoader和Dataset
+
+
+* RMB_data  人民币数据集
