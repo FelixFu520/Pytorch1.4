@@ -21,7 +21,7 @@ if __name__ == '__main__':
     random.seed(1)
 
     dataset_dir = os.path.join("..", "RMB_data")
-    split_dir = os.path.join(".",  "train_data")
+    split_dir = os.path.join("..",  "RMB_split")
     train_dir = os.path.join(split_dir, "train")
     valid_dir = os.path.join(split_dir, "valid")
     test_dir = os.path.join(split_dir, "test")

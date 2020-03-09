@@ -8,12 +8,11 @@
 import torch
 import numpy as np
 torch.manual_seed(1)
-
 # ===============================  exmaple 1 ===============================
 # 通过torch.tensor创建张量
 #
-# flag = True
-flag = False
+flag = True
+# flag = False
 if flag:
     arr = np.ones((3, 3))
     print("ndarray的数据类型：", arr.dtype)
