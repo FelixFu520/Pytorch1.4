@@ -24,6 +24,7 @@ class MLP(nn.Module):
     def forward(self, x):
         for (i, linear) in enumerate(self.linears):
             x = linear(x)
+            # x = torch.tanh(x)
             x = torch.relu(x)
 
             print("layer:{}, std:{}".format(i, x.std()))
@@ -36,22 +37,32 @@ class MLP(nn.Module):
     def initialize(self):
         for m in self.modules():
             if isinstance(m, nn.Linear):
+                # 1、成平方的增加
+                # nn.init.normal_(m.weight.data)
+
+                # 2、设置均值为1，标准差为根号1/n。但是有激活函数就不能适应(sigmoid、tanh）
                 # nn.init.normal_(m.weight.data, std=np.sqrt(1/self.neural_num))    # normal: mean=0, std=1
 
+                # 3、手写xavier
                 # a = np.sqrt(6 / (self.neural_num + self.neural_num))
-                #
+
                 # tanh_gain = nn.init.calculate_gain('tanh')
                 # a *= tanh_gain
                 #
                 # nn.init.uniform_(m.weight.data, -a, a)
 
+
+                # 4、pytorch中的xavier
                 # nn.init.xavier_uniform_(m.weight.data, gain=tanh_gain)
 
+                # 5、解决激活函数是relu，手写
                 # nn.init.normal_(m.weight.data, std=np.sqrt(2 / self.neural_num))
+
+                # 6、pytorch中的kaiming
                 nn.init.kaiming_normal_(m.weight.data)
 
-flag = 0
-# flag = 1
+# flag = 0
+flag = 1
 
 if flag:
     layer_nums = 100
@@ -68,8 +79,8 @@ if flag:
 
 # ======================================= calculate gain =======================================
 
-# flag = 0
-flag = 1
+flag = 0
+# flag = 1
 
 if flag:
 
