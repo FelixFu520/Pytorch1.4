@@ -28,6 +28,21 @@
 * lesson-18 优化器-2
 * lesson-19 学习率调整策略
 
+### TensorBoard
+* lesson-20 TensorBoard-1
+* lesson-21 TensorBoard-2
+* lesson-22 TensorBoard-3
+
+### Hook
+* lesson-23 Hook函数与CAM算法
+
+### 正则化
+* lesson-24 正则化-weight-decay
+* lesson-25 正则化-dropout
+* lesson-26 BN
+* lesson-27 Normalization Layers
+ 
+
 ### 数据集
 * RMB_data  人民币数据集
 * RMB_split 分成训练集、测试集和验证集的人民币数据集
