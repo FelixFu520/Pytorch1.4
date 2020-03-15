@@ -46,6 +46,19 @@
 * lesson-30 GPU使用
 * lesson-31 常见报错
 
+### 图像分割入门
+* lesson-32
+* lesson-33
+* lesson-34
+
+### GAN入门
+* lesson-35 GAN
+
+### RNN入门
+* lesson-36 RNN
+
 ### 数据集
 * RMB_data  人民币数据集
 * RMB_split 分成训练集、测试集和验证集的人民币数据集
+* Train_data 模型微调所需数据集
+* PortraitDataset 图像分割入门所需的数据集
