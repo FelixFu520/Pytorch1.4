@@ -37,10 +37,11 @@
 * lesson-23 Hook函数与CAM算法
 
 ### 正则化
-* lesson-24 正则化-weight-decay
+* lesson-24 正则化-weight-decay（L1/2）
 * lesson-25 正则化-dropout
-* lesson-26 BN
-* lesson-27 Normalization Layers
+* lesson-26 正则化-BN
+
+* lesson-27 正则化-Normalization Layers
  
 
 ### 数据集
