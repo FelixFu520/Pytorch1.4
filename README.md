@@ -32,17 +32,19 @@
 * lesson-20 TensorBoard-1
 * lesson-21 TensorBoard-2
 * lesson-22 TensorBoard-3
-
-### Hook
-* lesson-23 Hook函数与CAM算法
+* lesson-23 Hook函数与CAM算法——可视化网络
 
 ### 正则化
 * lesson-24 正则化-weight-decay（L1/2）
 * lesson-25 正则化-dropout
 * lesson-26 正则化-BN
-
 * lesson-27 正则化-Normalization Layers
  
+### 模型训练技巧
+* lesson-28 模型保存和模型加载
+* lesson-29 模型微调（Finetune）
+* lesson-30 GPU使用
+* lesson-31 常见报错
 
 ### 数据集
 * RMB_data  人民币数据集
